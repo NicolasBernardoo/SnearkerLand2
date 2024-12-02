@@ -330,6 +330,7 @@ a:hover {
 }
 
 
+/* Checkout */
 .checkout {
   padding: 20px;
   max-width: 800px;
@@ -390,3 +391,4 @@ a:hover {
 #checkout-form button:hover {
   background-color: #0056b3;
 }
+
