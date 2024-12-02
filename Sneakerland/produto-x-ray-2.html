@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tênis Puma X-Ray 2 Square</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">SneakerLand</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html" id="cart-link"
+          >Carrinho (<span id="cart-count">0</span>)</a
+        >
+      </nav>
+    </header>
+    <section class="product-details">
+      <div class="product-info">
+        <img
+          src="assets/Tênis Puma X-Ray 2 Square.png"
+          alt="Tênis Puma X-Ray 2 Square"
+        />
+        <div class="details">
+          <h1>Tênis Puma X-Ray 2 Square</h1>
+          <p>R$ 1190,90</p>
+          <label for="size">Escolha o tamanho:</label>
+          <select id="size">
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+          </select>
+          <button
+            onclick="addToCart({
+                        id: 7,
+                        name: 'Tênis Puma X-Ray 2 Square',
+                        price: '1190,90',
+                        image: 'assets/Tênis Puma X-Ray 2 Square.png',
+                        size: document.getElementById('size').value
+                    })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>© 2024 SneakerLand - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

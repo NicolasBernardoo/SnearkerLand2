@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakerLand</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <div class="logo">SneakerLand</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Produtos</a>
+        <a href="cart.html" id="cart-link"
+          >Carrinho (<span id="cart-count">0</span>)</a
+        >
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <h1>Bem-vindo à SneakerLand</h1>
+      <p>Os melhores sneakers para você!</p>
+    </section>
+    <div class="slogan">
+      <img src="assets/slogan .png" alt="" />
+    </div>
+    <!-- Produtos -->
+    <section id="products" class="products">
+      <h2>Nossos Produtos</h2>
+      <div class="product-grid">
+        <div class="product">
+          <a href="produto-air-force.html" target="_blank">
+            <img src="assets/AIR FORCE.avif" alt="Tênis Nike Air Force 1" />
+          </a>
+          <h3>
+            <a href="produto-air-force.html" target="_blank"
+              >Tênis Nike Air Force 1</a
+            >
+          </h3>
+          <p>R$ 799,90</p>
+
+          <button
+            onclick="addToCart({
+                id: 1,
+                name: 'Tênis Nike Air Force 1',
+                price: '799,90',
+                image: 'assets/AIR FORCE.avif'
+            })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="product">
+          <a href="produto-air-max-plus.html" target="_blank">
+            <img
+              src="assets/Tenis Nike Air Max Plus.webp"
+              alt="Tênis Nike Air Max Plus"
+            />
+          </a>
+          <h3>
+            <a href="produto-air-max-plus.html" target="_blank">
+              Tênis Nike Air Max Plus
+            </a>
+          </h3>
+          <p>R$ 1190,90</p>
+
+          <button
+            onclick="addToCart({
+                    id: 2,
+                    name: 'Tênis Nike Air Max Plus',
+                    price: '1190,90',
+                    image: 'assets/Tenis Nike Air Max Plus.webp'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="product">
+          <a href="produto-dunk-low-halloween.html" target="_blank">
+            <img
+              src="assets/Dunk Low GS Halloween.avif"
+              alt="Tênis Nike Dunk Low GS Halloween"
+            />
+          </a>
+
+          <h3>
+            <a href="produto-dunk-low-halloween.html" target="_blank">
+              Tênis Nike Dunk Low GS Halloween
+            </a>
+          </h3>
+          <p>R$ 699,90</p>
+
+          <button
+            onclick="addToCart({
+                    id: 3,
+                    name: 'Tênis Nike Dunk Low GS Halloween',
+                    price: '699,90',
+                    image: 'assets/Dunk Low GS Halloween.avif'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="product">
+          <a href="produto-asuna.html" target="_blank">
+            <img src="assets/ASUNA.avif" alt="Chinelo Nike Asuna 3" />
+          </a>
+
+          <h3>
+            <a href="produto-asuna.html" target="_blank"
+              >Chinelo Nike Asuna 3
+            </a>
+          </h3>
+          <p>R$ 349,99</p>
+
+          <button
+            onclick="addToCart({
+                    id: 4,
+                    name: 'Chinelo Nike Asuna 3',
+                    price: '349,99',
+                    image: 'assets/ASUNA.avif'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="prduto-jabbar-low.html" target="_blank">
+            <img
+              src="assets/Tenis_Jabbar_Low_.avif"
+              alt="Tênis Adidas Jabbar Low"
+            />
+          </a>
+
+          <h3>
+            <a href="prduto-jabbar-low.html" target="_blank"
+              >Tênis Adidas Jabbar Low
+            </a>
+          </h3>
+          <p>R$ 690,99</p>
+
+          <button
+            onclick="addToCart({
+                    id: 5,
+                    name: 'Tenis Jabbar Low',
+                    price: '690,99',
+                    image: 'assets/Tenis_Jabbar_Low_.avif'
+                  
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-adi-2000.html" target="_blank">
+            <img
+              src="assets/Tênis adidas ADI2000.png"
+              alt="Tênis adidas ADI2000"
+            />
+          </a>
+
+          <h3>
+            <a href="produto-adi-2000.html" target="_blank"
+              >Tênis adidas ADI2000
+            </a>
+          </h3>
+          <p>R$ 799,99</p>
+          <button
+            onclick="addToCart({
+                    id: 6,
+                    name: 'Tênis adidas ADI2000',
+                    price: '799,99',
+                    image: 'assets/Tênis adidas ADI2000.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-x-ray-2.html" target="">
+            <img
+              src="assets/Tênis Puma X-Ray 2 Square.png"
+              alt="Tênis Puma X-Ray 2 Square"
+            />
+          </a>
+          <h3>
+            <a href="produto-x-ray-2.html" target="_blank"
+              >Tênis Puma X-Ray 2 Square
+            </a>
+          </h3>
+          <p>R$ 1190,90</p>
+          <button
+            onclick="addToCart({
+                    id: 7,
+                    name: 'Tênis Puma X-Ray 2 Square',
+                    price: '1190,90',
+                    image: 'assets/Tênis Puma X-Ray 2 Square.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-x-ray-2.html" target="_blank">
+            <img
+              src="assets/Tênis Adidas NMD R1.png"
+              alt="Tênis Adidas NMD R1"
+            />
+          </a>
+          <h3>
+            <a href="produto-nmd-r1.html" target="_blank"
+              >Tênis Adidas NMD R1
+            </a>
+          </h3>
+          <p>R$699,00</p>
+          <button
+            onclick="addToCart({
+                    id: 8,
+                    name: 'Tênis Adidas NMD R1',
+                    price: 'R$699,00',
+                    image: 'assets/Tênis Adidas NMD R1.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="prdouto-yeezy.html" target="_blank">
+            <img src="assets/yeazy.png" alt="Tênis Adidas Yeezy Boost 35"
+          /></a>
+          <h3>
+            <a href="prdouto-yeezy.html" target="_blank"
+              >Tênis Adidas Yeezy Boost 35</a
+            >
+          </h3>
+          <p>R$ 890,00</p>
+          <button
+            onclick="addToCart({
+                    id: 9,
+                    name: 'Tênis Adidas Yeezy Boost 35',
+                    price: '890,00',
+                    image: 'assets/yeazy.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="prduto-chinelo-adilette.html" target="_blank">
+            <img
+              src="assets/Chinelo adidas Adilette 22.png"
+              alt="Tênis Nike Air Max Plus"
+          /></a>
+          <h3>
+            <a href="prduto-chinelo-adilette.html" target="_blank"
+              >Chinelo adidas Adilette 22</a
+            >
+          </h3>
+          <p>R$ 299,99</p>
+          <button
+            onclick="addToCart({
+                    id: 10,
+                    name: 'Chinelo adidas Adilette 22',
+                    price: '299,99',
+                    image: 'assets/Chinelo adidas Adilette 22.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-suede.html" target="_blank">
+            <img
+              src="assets/Tênis Puma Suede Xl.png"
+              alt="Tênis Puma Suede Xl"
+            />
+          </a>
+          <h3>
+            <a href="produto-suede.html" target="_blank">Tênis Puma Suede Xl</a>
+          </h3>
+          <p>R$ 754,99</p>
+          <button
+            onclick="addToCart({
+                    id: 11,
+                    name: 'TTênis Puma Suede Xl',
+                    price: '754,99',
+                    image: 'assets/Tênis Puma Suede Xl.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-puma-chinelo.html" target="_blank">
+            <img
+              src="assets/Chinelo Slide Puma Popcat 20 Bdp.png"
+              alt="Chinelo Slide Puma Popcat 20 Bdp"
+          /></a>
+          <h3>
+            <a href="produto-puma-chinelo.html"
+              >Chinelo Slide Puma Popcat 20 Bdp</a
+            >
+          </h3>
+          <p>R$ 139,90</p>
+          <button
+            onclick="addToCart({
+                    id: 12,
+                    name: 'Chinelo Slide Puma Popcat 20 Bdp',
+                    price: '139,90',
+                    image: 'assets/Chinelo Slide Puma Popcat 20 Bdp.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-jordan-1.html" target="_blank">
+            <img
+              src="assets/Tênis Air Jordan 1 Low.png"
+              alt="Tênis Air Jordan 1 Low"
+          /></a>
+          <h3>
+            <a href="produto-jordan-1.html" target="_blank"
+              >Tênis Air Jordan 1 Low</a
+            >
+          </h3>
+          <p>R$ 1190,90</p>
+          <button
+            onclick="addToCart({
+                    id: 13,
+                    name: 'Tênis Air Jordan 1 Low',
+                    price: '1190,90',
+                    image: 'assets/Tênis Air Jordan 1 Low.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-tn.html" target="_blank">
+            <img src="assets/Air Max TN Plus.png" alt="Tênis Nike Air Max Plus"
+          /></a>
+          <h3>
+            <a href="produto-tn.html" target="_blank">
+              Tênis Nike Air Max Plus</a
+            >
+          </h3>
+          <p>R$ 1190,90</p>
+          <button
+            onclick="addToCart({
+                    id: 14,
+                    name: 'Tênis Nike Air Max Plus',
+                    price: '1190,90',
+                    image: 'assets/Tenis Nike Air Max Plus.webp'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <a href="produto-vans.html" target="_blank">
+            <img src="assets/vans.png" alt="Tênis Vans Old Skool"
+          /></a>
+          <h3>
+            <a href="produto-vans.html" target="_blank">Tênis Vans Old Skool</a>
+          </h3>
+          <p>R$ 349,90</p>
+          <button
+            onclick="addToCart({
+                    id: 15,
+                    name: 'Tênis Vans Old Skool',
+                    price: '349,90',
+                    image: 'assets/vans.png'
+                })"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>© 2024 SneakerLand - Todos os direitos reservados.</p>
+      <nav>
+        <a href="#privacy">Política de Privacidade</a>
+        <a href="#terms">Termos de Uso</a>
+      </nav>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
